@@ -13,7 +13,7 @@ body{
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -26,8 +26,8 @@ header li{
     font-family: 'Montserrat', sans-serif;
     color: #424242;
     transition: all 0.3s ease 0s;
-}
 
+}
 .nav-links :hover{
     transition: all 0.3s ease 0s;
     color: #79b6f2;
@@ -37,8 +37,19 @@ a{
 }
 .signinl{
     height: 30px;
+    transition: ease 0.2s;
 }
 
+header :hover .signinl{
+    height: 50px;
+    transition: ease 0.2s;
+    opacity: 20%;
+}
+
+header :hover .logo{
+    transition: ease 0.2s;
+    opacity: 20%;
+}
 .searchbox{
     height: 125px;
     display: flex;
@@ -52,8 +63,15 @@ a{
     text-align: center;
     width: 25%;
     border-radius: 70px;
-    border: none;
-    background-color: #d1d1d1;
+    border: 1pt solid #79b6f2 ;
+    background-color: #f0f1f2;
     color: #424242;
     font-family: 'Montserrat', sans-serif;
+    transition: ease 0.5s;
+}
+
+.searchbox :hover{
+    height: 65px;
+    width: 35%;
+    transition: ease 0.5s;
 }
