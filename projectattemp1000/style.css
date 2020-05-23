@@ -208,7 +208,7 @@ footer ul{
     font-size: 15px;
     list-style-type: none;
     display: inline;
-    margin: 30px;
+    margin: 20px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -220,5 +220,7 @@ footer li{
 }
 footer img {
     width: 10%;
-    
+    position: absolute;
+    left: 10%;
+    top: 90%;
 }

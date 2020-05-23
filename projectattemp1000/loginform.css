@@ -16,6 +16,7 @@ body{
     width: 500px;
     background-color: white;
     box-shadow: grey;
+    border-radius: 40px;
 }
 
 .inputat{
@@ -44,6 +45,7 @@ button{
     position: absolute;
     left: 29%;
     top: 63%;
+    border-radius: 30px;
 }
 
 p{
@@ -55,4 +57,9 @@ p{
 
 a{
     text-decoration: none;
+}
+
+img{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }

@@ -16,6 +16,7 @@ body{
     width: 500px;
     background-color: white;
     box-shadow: grey;
+    border-radius: 40px;
 }
 
 .inputat{
@@ -51,4 +52,9 @@ p{
     left: 23%;
     top: 75%;
     font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
