@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+.logo{
+    height: 80px;
+    transition: ease 0.5s;
+}
+
+header :hover .logo{
+    transition: ease 0.5s;
+    opacity: 50%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header li{
+    font-size: 15px;
+    list-style-type: none;
+    display: inline;
+    margin: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #424242;
+    transition: all 0.3s ease 0s;
+
+}
+.nav-links :hover{
+    transition: all 0.3s ease 0s;
+    color: #79b6f2;
+}
+a{
+    text-decoration: none;
+}
+.signinl{
+    height: 45px;
+    transition: ease 0.2s;
+}
+
+header :hover .signinl{
+    height: 55px;
+    transition: ease 0.2s;
+    opacity: 20%;
+}
+
+.aboutcon{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div img{
+    opacity: 80%;
+    border-radius: 40px;
+}
+
+h3{
+    position: absolute;
+    left: 45%;
+    font-family: 'Montserrat', sans-serif;
+    color:  #79b6f2;
+    font-size: 20px;
+}
+
+p{
+    position: absolute;
+    left: 36%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+.inputi{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    padding-left: 30%;
+
+}
+
+.inputat{
+    height: 35px;
+    width: 700px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #79b6f2;
+}
+
+input{
+    margin-top: 35px;
+}
+
+#submiti{
+    height: 45px;
+    width: 65px;
+    position: absolute;
+    left: 50%;
+    top: 59%;
+    background-color: #79b6f2;
+    border: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}

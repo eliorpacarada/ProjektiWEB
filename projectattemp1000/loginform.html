@@ -3,15 +3,38 @@
 <html>
     <head>
         <title>Login / GAMINGhouse</title>
+        <link rel="stylesheet" href="loginform.css">
     </head>
 
     <body>
         <div class="main">
-            <p>helo</p>
-            <div class="forma">
-                <p>Login</p>
-
+            <div class="image">
+                <img src="img/fotologin.png" alt="">
             </div>
+
+            <div class="inputat">
+                <div class="username">
+                    <input type="text" placeholder="Username" id="username">
+                </div>
+                <div class="passwordi">
+                    <input type="password" placeholder="Password" id="pw">
+                </div>
+
+                <button onclick="validateform()">Sign in</button>
+            </div>
+            <br>
+            <p>Don't have an account? <a href="#"> Sign up now</a></p>
         </div>
+
+        <script>
+            function validateform(){
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('pw').value;
+
+                if(username == "" || password == ""){
+                    alert('Username or password invalid');
+                }
+            }
+        </script>
     </body>
 </html>
