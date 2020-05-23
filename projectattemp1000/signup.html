@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sign up / gamingHOUSE</title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="image">
+                <img src="img/fotologin.png" alt="">
+            </div>
+
+            <div class="inputat">
+                <div class="name">
+                    <input type="text" placeholder="Full name" id="name">
+                </div>
+                <div class="email">
+                    <input type="text" placeholder="Email adress" id="email">
+                </div>
+
+                <div class="username">
+                    <input type="text" placeholder="Usernme" id="username">
+                </div>
+
+                <div class="password">
+                    <input type="password" placeholder="Password" id="pw">
+                </div>
+                
+
+                <button onclick="validateform()">Sign up</button>
+            </div>
+            <br>
+        </div>
+
+        <script>
+            function validateform(){
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('pw').value;
+
+                if(name == "" || email == "" || username == "" || password == ""){
+                    alert("Some of your informations are empty")
+                }
+
+                if(password.length<6){
+                    alert("Password can't be shorter than 6 characters")
+                }
+            }
+        </script>
+    </body>
+</html>
