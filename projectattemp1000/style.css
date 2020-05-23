@@ -194,3 +194,31 @@ font-size: 30px;
     justify-content: space-evenly;
     
 }
+.fundi{
+    width: 100%;
+    max-height: 50px;
+    background: #3d444a;
+    color: #fff;
+    padding: 3em 0;
+    overflow: hidden;
+}
+footer ul{
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    font-size: 15px;
+    list-style-type: none;
+    display: inline;
+    margin: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+footer li{
+    color: white;
+}
+footer img {
+    width: 10%;
+    
+}
