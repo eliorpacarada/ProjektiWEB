@@ -106,10 +106,28 @@ input{
     width: 65px;
     position: absolute;
     left: 50%;
-    top: 59%;
+    top: 63%;
     background-color: #79b6f2;
     border: none;
     color: whitesmoke;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .inputi{
+        padding-left: 15%;
+    }
+    #submiti{
+        height: 70px;
+        width: 130px;
+        position: absolute;
+        left: 45%;
+        top: 45%;
+        background-color: #79b6f2;
+        border: none;
+        color: whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }

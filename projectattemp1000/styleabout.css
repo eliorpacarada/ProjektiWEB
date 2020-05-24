@@ -163,3 +163,27 @@ footer img {
     width: 10%;
     
 }
+
+@media screen and (max-width: 375px){
+    header li{
+        display: block;
+    }
+
+    footer ul{
+        display: none;
+
+    }
+
+    .cta{
+        background-color: #00cc80;
+        width: 300px;
+        display: block;
+        color: white;
+        border-radius: 20px;
+        padding: .5em;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 3% auto 7%;
+        z-index: 4;
+    }
+}

@@ -58,3 +58,46 @@ img{
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
+
+@media screen and (max-width: 1024px){
+    body{
+        background-color: #D3D3D3;
+        background-image: none;
+    }
+    .main{
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        height: 800px;
+        width: 500px;
+    }
+
+    button{
+        height: 60px;
+        width: 300px;
+        background-color: #79b6f2;
+        border: none;
+        color: whitesmoke;
+        border-radius: 1px;
+        cursor: pointer;
+        position: absolute;
+        left: 20%;
+        top: 75%;
+        border-radius: 30px;
+    }
+
+    input{
+        height: 50px;
+        width: 300px;
+        margin-top: 30px;
+        border: none;
+        border-bottom: 2px solid #79b6f2;
+    }
+
+    p{
+        position: absolute;
+        left: 15%;
+        top: 65%;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
