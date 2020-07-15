@@ -44,7 +44,7 @@
             <br>
             <br>
 
-            <p>Do you need help? Please fulfill your information, and send your message!</p>
+            <p>Do you want to buy an item? Please fulfill your information, and send your message!</p>
             <br>
             <br>
             <br>

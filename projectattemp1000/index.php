@@ -1,5 +1,13 @@
 <?php
     session_start();
+    require 'models/dbinc.php';
+
+    $sql = 'SELECT * FROM product';
+
+    $query = $pdo->prepare($sql);
+    $query->execute();
+    $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+
 ?>
 
 
@@ -50,65 +58,17 @@
           
 
          <div class="content">
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/pubgp.png" alt="pubg"></a>
-            </div>
+             <?php
+                foreach($result as $item) {
 
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/csgop.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/greenhellp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/residentp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/falloutp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/gearp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/fall4p.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/doomp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/animalp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/Maneaterp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/minecraftp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/Xenobladep.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/1971p.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/Destroyp.png" alt=""></a>
-            </div>
-
-            <div class="product">
-                <a href="#"><img class="c-image" src="img/humankindp.png" alt=""></a>
-            </div>
+                echo "<div class=\"product\">";
+                echo "<a href=\"#\"><img class=\"c-image\" src=\"";
+                echo $item['img']."\" alt=\"\"></a></div>";
+ 
+            }
+                ?>
+        </div>
+            
 
          </div>
 
