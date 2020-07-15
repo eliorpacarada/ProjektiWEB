@@ -28,6 +28,16 @@
 
         header('Location: users.php');
     }
+ 
+
+        /*require 'controller/UserController.php';
+
+        $user = new UserController;
+
+        if(isset($_POST['submit'])) {
+            $user->store($_POST);
+        }
+        */
 
 ?>
 

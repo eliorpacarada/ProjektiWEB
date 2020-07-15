@@ -32,7 +32,21 @@
 
         header('Location: dashboard.php');
     }
+    
+    /*require 'controller/UserController.php';
 
+    $user = new UserController;
+
+    if(isset($_GET['id'])) {
+        $userId = $_GET['id'];
+    }
+
+    $currenUser = $user->edit($userId);
+
+    if(isset($_POST['submit'])) {
+        $user->update($userId, $_POST);
+    }
+    */
 ?>
 
 <div class="inputat">

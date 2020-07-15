@@ -1,34 +1,11 @@
 <?php
-    
-    session_start();
-    if(isset($_SESSION['user_id'])){
-        header("Location: index.php");
+    require 'controller/AuthController.php';
+
+    $user = new AuthController;
+
+    if(isset($_POST['submit'])) {
+        $user->login($_POST);
     }
-
-    require 'models/dbinc.php';
-
-    if(isset($_POST['submit'])):
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        
-        $query = $pdo->prepare('SELECT id , name , email , password, role FROM users WHERE email = :email');
-        $query->bindParam(':email', $email);
-        $query->execute();
-
-        $user = $query->fetch();
-
-        if(count($user) > 0 && password_verify($password, $user['password'])){
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['name'] = $user['name'];
-            $_SESSION['role'] = $user['role'];
-
-            header("Location: index.php");
-        }else{
-            echo"Fjalekalimi ose email gabim!";
-        }
-
-    endif;
-
 ?>
 
 
