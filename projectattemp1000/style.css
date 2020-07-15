@@ -6,6 +6,11 @@
     transition: ease 0.5s;
 }
 
+#paragrafi{
+    position: absolute;
+    text-align: center;
+}
+
 header :hover .logo{
     transition: ease 0.5s;
     opacity: 50%;

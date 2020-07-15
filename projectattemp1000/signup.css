@@ -4,7 +4,7 @@ body{
     margin: 0px;
     padding: 0px;
     background-image: url(img/asdasd.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .main{
@@ -35,24 +35,18 @@ input{
 }
 
 button{
-    height: 45px;
-    width: 200px;
+    height: 60px;
+    width: 300px;
     background-color: #79b6f2;
-    border: none;
     color: whitesmoke;
-    border-radius: 1px;
     cursor: pointer;
     position: absolute;
-    left: 29%;
-    top: 75%;
+    left: 15%;
+    top: 53%;
+    border-radius: 30px;
 }
 
-p{
-    position: absolute;
-    left: 23%;
-    top: 75%;
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 img{
     border-top-left-radius: 40px;
