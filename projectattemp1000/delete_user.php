@@ -11,5 +11,5 @@
     $query = $pdo->prepare($query);
     $query->execute(['id' => $id]);
 
-    header('Location: users.php')
+    header('Location: dashboard.php');
 ?>

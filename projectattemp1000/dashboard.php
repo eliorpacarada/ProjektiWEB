@@ -10,11 +10,16 @@
         $query1 = $pdo->query('SELECT * FROM contactus');
         $contacts = $query1->fetchAll();
 
+
+        $query2 = $pdo->query('SELECT * FROM product');
+        $img = $query2->fetchAll(\PDO::FETCH_ASSOC);
+
 ?>
 
 
     <div class="container">
-    <a href="add_users.php">Add users</a>
+    <a href="add_users.php">Add users</a> <br>
+    <a href="posts.php">Add post</a>
     <br>
     <table border="1">
         <thead>
@@ -56,6 +61,23 @@
                 <td><?php echo$contact['fullname']?></td>
                 <td><?php echo$contact['emailadress']?></td>
                 <td><?php echo$contact['message']?></td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>img</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($img as $imgs):?>
+            <tr>
+                <td><?php echo$imgs['img']?></td>
+                <td><a href="delete_posts.php?id=<?php echo $imgs['id']; ?>">Delete</a></td>
             </tr>
             <?php endforeach; ?>
         </tbody>

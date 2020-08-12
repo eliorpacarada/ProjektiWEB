@@ -62,7 +62,7 @@
                 foreach($result as $item) {
 
                 echo "<div class=\"product\">";
-                echo "<a href=\"#\"><img class=\"c-image\" src=\"";
+                echo "<a href=\"contactus.php\"><img class=\"c-image\" src=\"";
                 echo $item['img']."\" alt=\"\"></a></div>";
  
             }
@@ -75,11 +75,12 @@
          <hr style="width:80%;text-align:center;margin-right:10; opacity: 50%;border: 1px solid #79b6f2;">
          
          <div class="footer">
-            
+         
+         <?php
+            include('./includes/footer.php')
+        ?>
                 
             
          </div>
-        <?php
-            include('./includes/footer.php')
-        ?>
+
     </body>

@@ -1,3 +1,5 @@
+    <link rel="stylesheet" href="style.css">
+    
     <header>
     <a href="index.php"><img class="logo" src="img/logo1.png" alt="logo"></a>
     <?php if(!isset($_SESSION['name'])): ?>
